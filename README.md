@@ -9,7 +9,6 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing](#-contributing)
@@ -78,16 +77,6 @@ Clone this repository to your desired folder:
   git clone https://github.com/LIBERCOSOFT/drum-machine.git - for HTTPS
 ```
 - Open the file in your preferred code editor
-
-
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  npm test
-```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
