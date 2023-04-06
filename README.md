@@ -23,7 +23,7 @@
 
 **Drum Machine** is a web based drum pad that plays a sound when a selected button is clicked on screen or on the keyboard.
 
-> ![](public/assets/drum_machine_screenshot.png)
+![](public/assets/drum_machine_screenshot.png)
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
