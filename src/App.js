@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Drum from './components/DrumComponent/drum.js'
 import Power from './components/PowerComponent/power.js'

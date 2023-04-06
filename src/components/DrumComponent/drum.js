@@ -7,77 +7,67 @@ class Drum extends React.Component {
         this.state ={
             key: ''
         }
-
-
-    this.clickQ = this.clickQ.bind(this);
-    this.clickW = this.clickW.bind(this);
-    this.clickE = this.clickE.bind(this);
-    this.clickA = this.clickA.bind(this);
-    this.clickS = this.clickS.bind(this);
-    this.clickD = this.clickD.bind(this);
-    this.clickZ = this.clickZ.bind(this);
-    this.clickX = this.clickX.bind(this);
-    this.clickC = this.clickC.bind(this);
     }
 
 /* buttons Onclick function to play the audio assocaited with them through their id and set the state with
     their name  */
-    clickQ(){
+    clickQ = () => {
         document.getElementById('q').play();
         this.setState({
             key: 'Heater 1'
         });
     }
 
-    clickW(){
+    clickW = () => {
         document.getElementById('w').play();
         this.setState({
             key: 'Heater 2'
         });
     }
 
-    clickE(){
+    clickE = () => {
         document.getElementById('e').play();
         this.setState({
             key: 'Heater 3'
         });
     }
-    clickA(){
+    clickA = () => {
         document.getElementById('a').play();
         this.setState({
             key: 'Heater 4'
         });
     }
-    clickS(){
+    clickS = () => {
         document.getElementById('s').play();
         this.setState({
             key: 'Clap'
         });
     }
-    clickD(){
+    clickD = () => {
         document.getElementById('d').play();
         this.setState({
             key: 'Open HH'
         });
     }
-    clickZ(){
+    clickZ = () => {
         document.getElementById('z').play();
         this.setState({
             key: 'Kick_n_Hat'
         });
     }
-    clickX(){
+    clickX = () => {
         document.getElementById('x').play();
         this.setState({
             key: 'Kick'
         });
     }
-    clickC(){
+    clickC = () => {
         document.getElementById('c').play();
         this.setState({
             key: 'Closed HH'
         });
     }
+
     render(){
         return(
         <div>
