@@ -9,6 +9,8 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing](#-contributing)
@@ -21,6 +23,7 @@
 
 **Drum Machine** is a web based drum pad that plays a sound when a selected button is clicked on screen or on the keyboard.
 
+> ![](public/assets/drum_machine_screenshot.png)
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -59,24 +62,36 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+- Have Git installed on your computer or laptop
+- Have Node installed on your computer or laptop
 
-```sh
- npm install
-```
-
-```sh
- npm start
-```
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh
+  mkdir desired-folder
   cd desired-folder
   git clone git@github.com:LIBERCOSOFT/drum-machine.git - for SSH
   git clone https://github.com/LIBERCOSOFT/drum-machine.git - for HTTPS
 ```
-- Open the file in your preferred code editor
+
+### Install
+
+Install this project with:
+
+```sh
+ npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+ npm start
+```
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
