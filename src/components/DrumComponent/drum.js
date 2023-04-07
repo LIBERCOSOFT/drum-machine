@@ -12,57 +12,75 @@ class Drum extends React.Component {
 /* buttons Onclick function to play the audio assocaited with them through their id and set the state with
     their name  */
     clickQ = () => {
-        document.getElementById('q').play();
+        let audio = document.getElementById('q');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Heater 1'
         });
     }
 
     clickW = () => {
-        document.getElementById('w').play();
+        let audio = document.getElementById('w');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Heater 2'
         });
     }
 
     clickE = () => {
-        document.getElementById('e').play();
+        let audio = document.getElementById('e');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Heater 3'
         });
     }
     clickA = () => {
-        document.getElementById('a').play();
+        let audio = document.getElementById('a');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Heater 4'
         });
     }
     clickS = () => {
-        document.getElementById('s').play();
+        let audio = document.getElementById('s');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Clap'
         });
     }
     clickD = () => {
-        document.getElementById('d').play();
+        let audio = document.getElementById('d');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Open HH'
         });
     }
     clickZ = () => {
-        document.getElementById('z').play();
+        let audio = document.getElementById('z');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Kick_n_Hat'
         });
     }
     clickX = () => {
-        document.getElementById('x').play();
+        let audio = document.getElementById('x');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Kick'
         });
     }
     clickC = () => {
-        document.getElementById('c').play();
+        let audio = document.getElementById('c');
+        audio.currentTime = 0
+        audio.play();
         this.setState({
             key: 'Closed HH'
         });
