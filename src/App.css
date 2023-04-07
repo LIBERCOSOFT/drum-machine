@@ -8,7 +8,7 @@ p{
 }
 
 .home-container{
-  border: 4px solid yellow;
+  border: 4px solid #ffa500;
   background-color: lightgrey;
   width: 600px;
   height: 300px;
@@ -31,7 +31,7 @@ button{
 
 button:active,
 .active {
-  background-color: darkgrey;
+  background-color: #ffa500 !important;
   transform: translateY(4px);
 }
 
@@ -100,7 +100,7 @@ button:focus {
 }
 
 input:checked + .slider {
-  background-color: yellow;
+  background-color: #ffa500;
 }
 
 input:focus + .slider {
@@ -119,7 +119,7 @@ input:checked + .slider:before {
   width: 100px;
   background-color: grey;
   margin: 20px 0px 20px -20px;
-  border: 4px solid yellow;
+  border: 4px solid #ffa500;
 }
 
 .key-container h4{
