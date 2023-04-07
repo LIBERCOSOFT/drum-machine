@@ -11,12 +11,32 @@ class Drum extends React.Component {
 
   drumButtonsClick = (e) => {
     const { id } = e.target;
-    let audio = document.getElementById(id);
+    let audio = document.getElementById(id.split('-')[0]);
     audio.currentTime = 0;
     audio.play();
     this.setState({
       key: audio.className,
     });
+  };
+
+  componentDidMount() {
+    const keyDownHandler = event => {
+      let keys = ['q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c']
+      let pressedKey = event.key.toLowerCase();
+      if(keys.includes(pressedKey)){
+        document.getElementById(`${pressedKey}-btn`).click();
+        document.getElementById(`${pressedKey}-btn`).classList.add('active');
+        setTimeout(() => {
+          document.getElementById(`${pressedKey}-btn`).classList.remove('active');
+        }, 100);
+      }
+    };
+
+    document.addEventListener('keydown', keyDownHandler);
+
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
   };
 
   render() {
@@ -93,64 +113,73 @@ class Drum extends React.Component {
         <div className="home-container">
           <div className="grid-container">
             <button
+              type='button'
               className="grid-item"
-              id="q"
+              id="q-btn"
               onClick={this.drumButtonsClick}
             >
               Q
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="w"
+              id="w-btn"
               onClick={this.drumButtonsClick}
             >
               W
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="e"
+              id="e-btn"
               onClick={this.drumButtonsClick}
             >
               E
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="a"
+              id="a-btn"
               onClick={this.drumButtonsClick}
             >
               A
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="s"
+              id="s-btn"
               onClick={this.drumButtonsClick}
             >
               S
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="d"
+              id="d-btn"
               onClick={this.drumButtonsClick}
             >
               D
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="z"
+              id="z-btn"
               onClick={this.drumButtonsClick}
             >
               Z
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="x"
+              id="x-btn"
               onClick={this.drumButtonsClick}
             >
               X
             </button>
             <button
+              type='button'
               className="grid-item"
-              id="c"
+              id="c-btn"
               onClick={this.drumButtonsClick}
             >
               C
