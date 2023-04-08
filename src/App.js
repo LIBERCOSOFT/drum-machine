@@ -15,21 +15,17 @@ class Home extends React.Component{
       bank : 'drum'
     }
 
-    this.powerClick=this.powerClick.bind(this);
-    this.powerOff=this.powerOff.bind(this);
-    this.drumBankClick=this.drumBankClick.bind(this);
-    this.pianoBankClick=this.pianoBankClick.bind(this);
   }
 
 /* it turns the state's power on when the power is clicked */
-  powerClick(){
+  powerClick = () => {
       this.setState({
         power: true
       });
   }
 
 /* turns the state's power off but retains the state it was before the power was switched off */
-  powerOff(){
+  powerOff = () =>{
     this.setState({
       power: false,
       bank: this.state.bank
@@ -37,14 +33,14 @@ class Home extends React.Component{
   }
 
 /* switches the state's bank to piano */
-  drumBankClick(){
+  drumBankClick = () =>{
     this.setState({
       bank: 'piano'
     });
   }
 
 /* switches the state's bank to drum */
-  pianoBankClick(){
+  pianoBankClick = () =>{
     this.setState({
       bank: 'drum'
     });
