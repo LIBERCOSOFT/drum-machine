@@ -13,6 +13,7 @@ class Drum extends React.Component {
     const { id } = e.target;
     let audio = document.getElementById(id.split('-')[0]);
     audio.currentTime = 0;
+    audio.volume = this.props.volume
     audio.play();
     this.setState({
       key: audio.className,
