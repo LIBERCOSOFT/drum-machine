@@ -39,7 +39,7 @@ const Power = (props) =>  {
 
         </div>
 
-        <p>coded by <a href="https://github.com/OLADIPO-K">OLADIPO-K</a></p>
+        <p>coded by <a href="https://github.com/LIBERCOSOFT">LIBERCOSOFT</a></p>
       </div>
     );
 }

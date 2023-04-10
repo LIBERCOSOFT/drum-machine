@@ -197,6 +197,13 @@ class Drum extends React.Component {
               <h4> {this.state.key} </h4>
             </div>
 
+            <input 
+          type="range" 
+          min="0" max="1" 
+          value={this.props.volume} 
+          onChange={this.props.handleVolume}
+          step="0.1"/>
+
             <h5>Bank</h5>
             <label className="switch">
               <input type="checkbox" onClick={this.props.drumBankClick} />

@@ -12,7 +12,8 @@ class Home extends React.Component{
 
     this.state = {
       power : true,
-      bank : 'drum'
+      bank : 'drum',
+      volume: 0.5,
     }
 
   }
@@ -30,6 +31,12 @@ class Home extends React.Component{
       power: false,
       bank: this.state.bank
     });
+  }
+
+  handleVolume = (e) => {
+    this.setState({
+      volume: e.target.value
+    })
   }
 
 /* switches the state's bank to piano */
@@ -52,12 +59,12 @@ class Home extends React.Component{
     if(!this.state.power){
       return(
         <div>
-        <Power power={this.powerClick}/>
+        <Power power={this.powerClick} />
         </div>
       );
     }else if(this.state.power && this.state.bank === 'drum'){
       return(
-      <Drum powerOff={this.powerOff} drumBankClick={this.drumBankClick}/>
+      <Drum powerOff={this.powerOff} drumBankClick={this.drumBankClick} volume={this.state.volume} handleVolume={this.handleVolume}/>
     );
     }
 
