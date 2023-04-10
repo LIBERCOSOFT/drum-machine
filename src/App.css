@@ -130,3 +130,33 @@ input:checked + .slider:before {
 h5{
   margin: 0px 0px 0px 6px;
 }
+
+.slider-vol {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ffa500;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider-vol:hover {
+  opacity: 1;
+}
+
+.slider-vol::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  cursor: pointer;
+  margin: 2px 0;
+}
+
+.slider-vol::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}

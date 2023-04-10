@@ -198,12 +198,17 @@ class Drum extends React.Component {
               <h4> {this.state.key} </h4>
             </div>
 
+            <div>
+            <h5>Volume</h5>
             <input 
-          type="range" 
-          min="0" max="1" 
-          value={this.props.volume} 
-          onChange={this.props.handleVolume}
-          step="0.1"/>
+              type="range" 
+              min="0" max="1" 
+              value={this.props.volume} 
+              onChange={this.props.handleVolume}
+              step="0.1"
+              className='slider-vol'
+            />
+            </div>
 
             <h5>Bank</h5>
             <label className="switch">
