@@ -13,7 +13,7 @@ class Home extends React.Component{
     this.state = {
       power : true,
       bank : 'drum',
-      volume: 0.5,
+      volume: 0.3,
     }
 
   }
