@@ -71,7 +71,7 @@ class Home extends React.Component{
     if(this.state.power && this.state.bank === 'piano'){
       return(
         <div>
-        <Piano powerOff={this.powerOff} pianoBankClick={this.pianoBankClick}/>
+        <Piano powerOff={this.powerOff} pianoBankClick={this.pianoBankClick} volume={this.state.volume} handleVolume={this.handleVolume}/>
         </div>
       );
     }

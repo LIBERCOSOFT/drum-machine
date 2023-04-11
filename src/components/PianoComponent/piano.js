@@ -13,6 +13,7 @@ class Piano extends React.Component {
     const { id } = e.target;
     let audio = document.getElementById(id.split('-')[0]);
     audio.currentTime = 0;
+    audio.volume = this.props.volume
     audio.play();
     this.setState({
       key: audio.className,
@@ -174,6 +175,18 @@ class Piano extends React.Component {
 
             <div className="key-container">
               <h4> {this.state.key} </h4>
+            </div>
+
+            <div>
+            <h5>Volume</h5>
+            <input 
+              type="range" 
+              min="0" max="1" 
+              value={this.props.volume} 
+              onChange={this.props.handleVolume}
+              step="0.1"
+              className='slider-vol'
+            />
             </div>
 
             <h5>Bank</h5>
