@@ -52,7 +52,8 @@ class Home extends React.Component{
       bank: 'drum'
     });
   }
-  
+
+  // keybaord functionalities
   componentDidMount() {
     const keyDownHandler = event => {
       let keys = ['q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c']
