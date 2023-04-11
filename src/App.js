@@ -52,6 +52,26 @@ class Home extends React.Component{
       bank: 'drum'
     });
   }
+  
+  componentDidMount() {
+    const keyDownHandler = event => {
+      let keys = ['q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c']
+      let pressedKey = event.key.toLowerCase();
+      if(keys.includes(pressedKey)){
+        document.getElementById(`${pressedKey}-btn`).click();
+        document.getElementById(`${pressedKey}-btn`).classList.add('active');
+        setTimeout(() => {
+          document.getElementById(`${pressedKey}-btn`).classList.remove('active');
+        }, 100);
+      }
+    };
+
+    document.addEventListener('keydown', keyDownHandler);
+
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
+  };
 
 /* conditional render; if power is on, if states's bank is piano or drum, different component are rendered
   respectively */
